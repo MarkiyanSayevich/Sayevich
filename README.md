@@ -1,2 +1,4 @@
 # Sayevich
-This repository is aimed for DevOps course training.
+
+1. Клоную репозиторій на ПК: `git clone git@github.com:MarkiyanSayevich/Sayevich.git`
+2. Закомітив README
