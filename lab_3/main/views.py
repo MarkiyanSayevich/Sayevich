@@ -9,6 +9,12 @@ def main(request):
 
 
 def health(request):
-    response = {'date': 'test1', 'current_page': "test2", 'server_info': "test3", 'client_info': "test4"}
+    date = datetime.now().strftime("%D/%m/%Y %H:%M:%S")
+    response = {
+            'date': date,
+            'current_page': request.path,
+            'server_info': os.uname(),
+            'client_info': request.META['HTTP_USER_AGENT']
+    }
     return JsonResponse(response)
 
