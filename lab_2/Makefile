@@ -14,6 +14,6 @@ run:
 	@pipenv run python app.py | tee -a results.txt
 deploy:
 	@echo "Adding and Committing results.txt to git."
-	@git add results.txt &&
-	git commit -m "lab_2: Make - results.txt" &&
-	git push
+	@git add results.txt \
+	&& git commit -m "lab_2: Make - results.txt"\
+	&& git push
